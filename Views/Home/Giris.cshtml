@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Sanal Tarihçim | Arşiv Erişimi";
+    ViewBag.BodyStyle = "display: flex; justify-content: center; align-items: center; min-height: 100vh; background: var(--parchment);";
+}
+
+<div style="width: 100%; max-width: 450px; background: white; padding: 50px; border-radius: 15px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-top: 5px solid var(--gold);">
+    <div style="text-align: center; margin-bottom: 30px;">
+        <a href="/" style="text-decoration: none; color: var(--ink); font-family: 'Cinzel Decorative'; font-size: 1.8rem; display: block; margin-bottom: 10px;">SANAL TARİHÇİM</a>
+        <p style="font-family: 'Playfair Display'; font-style: italic;">Arşiv kapıları sizi bekliyor...</p>
+    </div>
+
+    <form>
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold;"><i class="fas fa-user-shield"></i> Kullanıcı Adı veya E-Posta</label>
+            <input type="text" placeholder="Giriş mührünüzü yazın" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold;"><i class="fas fa-key"></i> Parola</label>
+            <input type="password" placeholder="Gizli anahtarınız" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+        </div>
+
+        <button type="button" class="capsule-btn" style="width: 100%; background: var(--ink); color: white; border: none; padding: 15px; font-weight: bold; cursor: pointer;">GİRİŞ YAP</button>
+    </form>
+
+    <div style="margin-top: 30px; text-align: center; font-size: 0.9rem;">
+        <span>Henüz bir kaydınız yok mu?</span><br>
+        <a href="/uye-ol" style="color: var(--gold); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 10px;">Yeni Bir Kayıt Oluşturun →</a>
+    </div>
+</div>
